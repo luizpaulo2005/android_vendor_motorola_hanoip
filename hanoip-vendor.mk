@@ -3600,8 +3600,6 @@ PRODUCT_PACKAGES += \
     CneApp \
     IWlanService \
     TimeService \
-    uimgbaservice \
-    ImsRcsService \
     QtiTelephonyService \
     embms \
     uceShimService \
