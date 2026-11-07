@@ -3490,7 +3490,6 @@ PRODUCT_PACKAGES += \
     liblog_vendor \
     liblowi_client \
     liblowi_wifihal \
-    libmdmcutback \
     libmm-hdcpmgr \
     libmot_afd \
     libmot_lux_standardization \
@@ -3636,7 +3635,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2-service.xml \
     adpl \
     adsprpcd \
-    capsense_reset \
     cdsprpcd \
     charge_only_mode \
     cnd \

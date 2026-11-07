@@ -14209,40 +14209,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmdmcutback",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmdmcutback.so",
-            ],
-            shared_libs: [
-                "libqmi_cci",
-                "libqmi_common_so",
-                "libutils",
-                "libcutils",
-                "libsysutils",
-                "libsensorndkbridge",
-                "libqmimotext",
-                "liblog",
-                "libxml2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmm-hdcpmgr",
     owner: "motorola",
     strip: {
@@ -14335,7 +14301,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libcutils",
-                "libmdmcutback",
                 "liblog",
                 "libsysutils",
                 "libril",
@@ -14347,6 +14312,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -17702,35 +17668,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "capsense_reset",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/capsense_reset",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libhardware_legacy",
-                "libutils",
-                "libsensorndkbridge",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "cdsprpcd",
     owner: "motorola",
     target: {
@@ -19108,7 +19045,6 @@ cc_prebuilt_binary {
                 "libqmi_common_so",
                 "libqmiservices",
                 "libqmimotext",
-                "libmdmcutback",
                 "liblog_vendor",
                 "libutils",
                 "libadropbox",
@@ -19120,6 +19056,7 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     strip: {
         none: true,
     },
